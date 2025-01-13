@@ -20,6 +20,16 @@ public class MethodOverloading01 {
         //s.substring(int beginIndex); ==> tek parametre aliyor
         //s.substring(int beginIndex, int endIndex); ==> iki parametre aliyor
 
+        //Method ismi + Parametre = Method Signature
+
+        //String s = "Java";
+        //s.substring() ==> non-static, class'a degil objeye ait olan
+
+        //Math.min() ==> Class uzerinden dogrudan cagirdik, boyle metotlara static method denir. Class'a ait.
+
+
+
+
         add(3,8);
 
 
@@ -59,6 +69,31 @@ public class MethodOverloading01 {
         System.out.println(a + b + c);
 
     }
+
+    //Method ismi + Parametre = Method Signature
+
+     /* Method Overloading'de sadece parametreler degistirilir.
+   Boylelikle method signature degismis olur ve Java bu methodu yeni bir method gibi kabul eder.
+
+        Method Overloading icin;
+        a) Parametre sayisini degistirebilirsiniz.
+        b) Parametre data tiplerini degistirebilirsiniz.
+        c) Parametre data tipleri farkli ise parametrelerin yerlerini degistirebilirsiniz.
+        d) Method overloading olustururken return type'in, access modifier'in,
+           static veya non-static olmanin hicbir etkisi yoktur.
+   */
+
+    /*
+        Soru 1: private method'lar overload edilebilir mi?
+
+        Cevap 1: private method'lar overload edilebilirler cunku;
+        overload islemi tek class icinde yapilir, private methodlar ayni class'in icinden
+        ulasilabilir oldugundan overload'a engel degildir.
+
+        Soru 2: static method'lar overload edilebilir mi?
+        Cevap 2: static method'lar overload edilebilir cunku esasinda overload'da biz yeni method'lar olustururuz.
+*/
+
 
 
 
